@@ -6,71 +6,58 @@ ifndef::es_build[= placeholder0]
 
 [partintro]
 --
-_Elasticsearch_ is a real-time distributed search and analytics engine. It
-allows you((("Elasticsearch", "defined"))) to explore your data at a speed and at a scale never before
-possible. It is used for full-text search, structured search, analytics, and all three
-in combination:
+_Elasticsearch_ 是一个实时的分布式搜索分析引擎，它能让你 ((("Elasticsearch", "defined"))) 去探索你的数据，
+以一个之前从未有过的速度和规模。它被用作全文搜索，结构化搜索，分析，并且它把这三个功能都融入其中：
 
-*   Wikipedia uses Elasticsearch to provide full-text search with highlighted
-    search snippets, and _search-as-you-type_ and _did-you-mean_ suggestions.
+*   Wikipedia 使用 Elasticsearch 提供带有高亮片段的全文搜索，还有 _search-as-you-type_
+    和 _did-you-mean_ 的建议。
 
-*   _The Guardian_ uses Elasticsearch to combine visitor logs with social
-   -network data to provide real-time feedback to its editors about the
-    public's response to new articles.
+*   _卫报_ 使用 Elasticsearch 去结合用户访问日志与网络社交数据，实时地给它的编辑们提供公众对于
+    新文章的反馈。
 
-*   Stack Overflow combines full-text search with geolocation queries and uses
-    _more-like-this_ to find related questions and answers.
+*   Stack Overflow 结合全文搜索与问题词定位，并且使用 _more-like-this_ 接口去查找相关的问题与答案。
 
-*   GitHub uses Elasticsearch to query 130 billion lines of code.
+*   GitHub 使用 Elasticsearch 去检索 1.3 * 10^11 行代码。
 
-But Elasticsearch is not just for mega-corporations. It has enabled many
-startups like Datadog and Klout to prototype ideas and to turn them into
-scalable solutions. Elasticsearch can run on your laptop, or scale out to
-hundreds of servers and petabytes of data.
+但是 Elasticsearch 不仅仅为巨头公司服务. 它已经帮助了很多初创公司，像 Datadog 和 Klout，
+帮助他们将计划原型变为真实可行的方案。Elasticsearch 能运行在你的笔记本电脑上，或者扩展到上百台
+服务器上去处理PB级数据。
 
-No individual part of Elasticsearch is new or revolutionary.((("full text search"))) Full-text search
-has been done before, as have analytics systems((("distributed databases")))((("analytics systems"))) and distributed databases. The
-revolution is the combination of these individually useful parts into a
-single, coherent, real-time application. It has a low barrier to entry for the
-new user, but can keep pace with you as your skills and needs grow.
+Elasticsearch 中没有一个单独的组件是全新的或者是革命性的。((("full text search"))) 全文搜索很久之前就已经可以做到了，
+就像早就出现了的分析系统 ((("distributed databases")))((("analytics systems"))) 和分布式数据库。
+革命性的成果在于将这些单独的，有用的组件融合到一个单一的，一致的实时程序中去。对于初学者来说，门槛很低，
+但是当你的技能需要成长的时候，你要紧紧抓住。
 
-If you are picking up this book, it is because you have data, and there is no
-point in having data unless you plan to _do something_ with it.
+如果你现在正在打开这本书，是因为你拥有数据。但仅仅拥有数据是没有意义的，除非你准备使用它 _做些什么_。
 
-Unfortunately, most databases are astonishingly inept at extracting actionable
-knowledge from your data.((("databases", "ineptness at extracting actionable data"))) Sure, they can filter by timestamp or exact values,
-but can they perform full-text search, handle synonyms, and score documents by
-relevance?  Can they generate analytics and aggregations from the same data?
-Most important, can they do this in real time without big batch-processing
-jobs?
+不幸地，大部分数据库对于从你数据提取有用的知识出乎意料的差劲。((("databases", "ineptness at extracting actionable data")))
+当然，你可以通过 timestamp 过滤或者直接提取 values ，但是，它们能够进行全文检索，处理同义词，通过相关性给文档评分么？
+它们从同样的数据中生成分析与聚合数据吗？最重要的是，它们能实时地做到上面的那些而不经过大型批量处理任务么？
 
-This is what sets Elasticsearch apart: Elasticsearch encourages you to explore
-and utilize your data, rather than letting it rot in a warehouse because it is
-too difficult to query.
+这就能让 Elasticsearch 脱颖而出：Elasticsearch 鼓励你去探索与利用数据，而不是由于数据太复杂，
+无法进行 query，就让它们烂在数据仓库里面。
 
-Elasticsearch is your new best friend.
+Elasticsearch 是你最好的新朋友。
 --
 
-include::010_Intro.asciidoc[]
+include::010_入门.asciidoc[]
 
-include::020_Distributed_Cluster.asciidoc[]
+include::020_分布式集群.asciidoc[]
 
-include::030_Data_In_Data_Out.asciidoc[]
+include::030_输入输出.asciidoc[]
 
-include::040_Distributed_CRUD.asciidoc[]
+include::040_分布式CRUD.asciidoc[]
 
-include::050_Search.asciidoc[]
+include::050_搜索.asciidoc[]
 
-include::052_Mapping_Analysis.asciidoc[]
+include::052_映射与分析.asciidoc[]
 
-include::054_Query_DSL.asciidoc[]
+include::054_查询表达式.asciidoc[]
 
-include::056_Sorting.asciidoc[]
+include::056_排序.asciidoc[]
 
-include::060_Distributed_Search.asciidoc[]
+include::060_分布式搜索.asciidoc[]
 
-include::070_Index_Mgmt.asciidoc[]
+include::070_索引管理.asciidoc[]
 
-include::075_Inside_a_shard.asciidoc[]
-
-
+include::075_分片原理.asciidoc[]
