@@ -37,27 +37,27 @@ Elasticsearch 中没有一个单独的组件是全新的或者是革命性的。
 这就能让 Elasticsearch 脱颖而出：Elasticsearch 鼓励你去探索与利用数据，而不是由于数据太复杂，
 无法进行 query，就让它们烂在数据仓库里面。
 
-Elasticsearch 是你最好的新朋友。
+Elasticsearch 是你新的好朋友。
 --
 
-include::010_入门.asciidoc[]
+include::010_Intro.asciidoc[]
 
-include::020_分布式集群.asciidoc[]
+include::020_Distributed_Cluster.asciidoc[]
 
-include::030_输入输出.asciidoc[]
+include::030_Data_In_Data_Out.asciidoc[]
 
-include::040_分布式CRUD.asciidoc[]
+include::040_Distributed_CRUD.asciidoc[]
 
-include::050_搜索.asciidoc[]
+include::050_Search.asciidoc[]
 
-include::052_映射与分析.asciidoc[]
+include::052_Mapping_Analysis.asciidoc[]
 
-include::054_查询表达式.asciidoc[]
+include::054_Query_DSL.asciidoc[]
 
-include::056_排序.asciidoc[]
+include::056_Sorting.asciidoc[]
 
-include::060_分布式搜索.asciidoc[]
+include::060_Distributed_Search.asciidoc[]
 
-include::070_索引管理.asciidoc[]
+include::070_Index_Mgmt.asciidoc[]
 
-include::075_分片原理.asciidoc[]
+include::075_Inside_a_shard.asciidoc[]
