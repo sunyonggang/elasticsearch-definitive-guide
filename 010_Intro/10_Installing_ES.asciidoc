@@ -28,8 +28,8 @@
 cd elasticsearch-<version>
 ./bin/elasticsearch <1> <2>
 --------------------------------------------------
-<1> 如果你想把 Elasticsearch 作为一个守护进程在后台运行，那么可以在后面添加参数 `-d`。
-<2> 如果你是在 Windows 上面运行 Elasticseach，你应该运行 `bin\elasticsearch.bat` 而不是 `bin\elasticsearch`。
+<1> 如果你想把 Elasticsearch 作为一个守护进程在后台运行，那么可以在后面添加参数 `-d` 。
+<2> 如果你是在 Windows 上面运行 Elasticseach，你应该运行 `bin\elasticsearch.bat` 而不是 `bin\elasticsearch` 。
 
 
 测试 Elasticsearch 是否启动成功，可以打开另一个终端，执行以下操作：
@@ -64,8 +64,8 @@ cURL 给你提供了一种将请求提交到 Elasticsearch 的便捷方式，并
 这就意味着你现在已经启动并运行一个 Elasticsearch 节点了，你可以用它做实验了。
 一个 _节点_ 是一个运行中的 Elasticsearch 的实例。((("nodes", "defined"))) 而一个 集群 是一组拥有相同 `cluster.name` 的节点，
 他们能一起工作并共享数据，还提供容错与扩展。(然而，一个单独的节点也可以组成一个集群。) 你可以在 `elasticsearch.yml` 配置文件中
-修改 `cluster.name`，该文件会在节点启动时加载 (译者注：这个重启服务后才会生效)。
-关于上面的`cluster.name`以及其它  <<important-configuration-changes, Important Configuration Changes>> 信息，
+修改 `cluster.name` ，该文件会在节点启动时加载 (译者注：这个重启服务后才会生效)。
+关于上面的 `cluster.name` 以及其它  <<important-configuration-changes, Important Configuration Changes>> 信息，
 你可以在这本书的后面章节 Production Deployment 部分找到更多。
 
 TIP：看到下方的 View in Sense 的例子了么？<<sense, Install the Sense console>> 使用你自己的 Elasticsearch 集群去运行这本书中的例子，
@@ -88,7 +88,7 @@ Sense 是一个 https://www.elastic.co/guide/en/kibana/current/index.html[Kibana
 --------------------------------------------------
 ./bin/kibana plugin --install elastic/sense <1>
 --------------------------------------------------
-<1> Windows上面执行: `bin\kibana.bat plugin --install elastic/sense`。
+<1> Windows上面执行: `bin\kibana.bat plugin --install elastic/sense` 。
 +
 NOTE：你可以直接从这里 https://download.elastic.co/elastic/sense/sense-latest.tar.gz 下载 Sense
 离线安装可以查看这里 https://www.elastic.co/guide/en/sense/current/installing.html#manual_download[install it on an offline machine] 。
@@ -99,6 +99,6 @@ NOTE：你可以直接从这里 https://download.elastic.co/elastic/sense/sense-
 --------------------------------------------------
 ./bin/kibana <1>
 --------------------------------------------------
-<1> Windows 上启动 kibana: `bin\kibana.bat`。
+<1> Windows 上启动 kibana: `bin\kibana.bat` 。
 
-. 在你的浏览器中打开 Sense： `http://localhost:5601/app/sense` 。
+. 在你的浏览器中打开 Sense: `http://localhost:5601/app/sense` 。
