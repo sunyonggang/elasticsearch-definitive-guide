@@ -2,7 +2,7 @@ ifndef::es_build[= placeholder0]
 
 [[getting-started]]
 [role="pagenumrestart"]
-= Getting Started
+= 起步
 
 [partintro]
 --
@@ -35,7 +35,7 @@ Elasticsearch 中没有一个单独的组件是全新的或者是革命性的。
 它们从同样的数据中生成分析与聚合数据吗？最重要的是，它们能实时地做到上面的那些而不经过大型批量处理任务么？
 
 这就能让 Elasticsearch 脱颖而出：Elasticsearch 鼓励你去探索与利用数据，而不是由于数据太复杂，
-无法进行 query，就让它们烂在数据仓库里面。
+无法进行查询，就让它们烂在数据仓库里面。
 
 Elasticsearch 是你新的好朋友。
 --
