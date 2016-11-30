@@ -2,12 +2,12 @@ ifndef::es_build[= placeholder0]
 
 [[getting-started]]
 [role="pagenumrestart"]
-= 起步
+= 基础入门
 
 [partintro]
 --
-_Elasticsearch_ 是一个实时的分布式搜索分析引擎，它能让你 ((("Elasticsearch", "defined"))) 去探索你的数据，
-以一个之前从未有过的速度和规模。它被用作全文搜索，结构化搜索，分析，并且它把这三个功能都融入其中：
+_Elasticsearch_ 是一个实时的分布式搜索分析引擎，它能让你((("Elasticsearch", "defined")))以一个之前从未有过的速度和规模，
+去探索你的数据。它被用作全文检索、结构化搜索、分析或是这三个功能的组合：
 
 *   Wikipedia 使用 Elasticsearch 提供带有高亮片段的全文搜索，还有 _search-as-you-type_
     和 _did-you-mean_ 的建议。
@@ -19,16 +19,16 @@ _Elasticsearch_ 是一个实时的分布式搜索分析引擎，它能让你 (((
 
 *   GitHub 使用 Elasticsearch 去检索 1.3 * 10^11 行代码。
 
-但是 Elasticsearch 不仅仅为巨头公司服务. 它已经帮助了很多初创公司，像 Datadog 和 Klout，
+但是 Elasticsearch 不仅仅为巨头公司服务。它已经帮助了很多初创公司，像 Datadog 和 Klout，
 帮助他们将计划原型变为真实可行的方案。Elasticsearch 能运行在你的笔记本电脑上，或者扩展到上百台
 服务器上去处理PB级数据。
 
-Elasticsearch 中没有一个单独的组件是全新的或者是革命性的。((("full text search"))) 全文搜索很久之前就已经可以做到了，
-就像早就出现了的分析系统 ((("distributed databases")))((("analytics systems"))) 和分布式数据库。
+Elasticsearch 中没有一个单独的组件是全新的或者是革命性的。((("full text search")))全文搜索很久之前就已经可以做到了，
+就像早就出现了的分析系统((("distributed databases")))((("analytics systems")))和分布式数据库。
 革命性的成果在于将这些单独的，有用的组件融合到一个单一的，一致的实时程序中去。对于初学者来说，门槛很低，
 但是当你的技能需要成长的时候，你要紧紧抓住。
 
-如果你现在正在打开这本书，是因为你拥有数据。但仅仅拥有数据是没有意义的，除非你准备使用它 _做些什么_。
+如果你现在正在打开这本书，是因为你拥有数据。但仅仅拥有数据是没有意义的，除非你准备使用它 _做些什么_ 。
 
 不幸地，大部分数据库对于从你数据提取有用的知识出乎意料的差劲。((("databases", "ineptness at extracting actionable data")))
 当然，你可以通过 timestamp 过滤或者直接提取 values ，但是，它们能够进行全文检索，处理同义词，通过相关性给文档评分么？
