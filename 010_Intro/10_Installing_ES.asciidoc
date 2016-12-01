@@ -17,7 +17,7 @@
 到 Debian 或者 RPM 包，除此之外，你也可以使用官方支持的 https://github.com/elasticsearch/puppet-elasticsearch[Puppet module] 或者 https://github.com/elasticsearch/cookbook-elasticsearch[Chef cookbook]。
 ====
 
-一旦你解压好了归档文件，Elasticsearch 已经准备好运行了。按照下面的操作，在前台(foregroud)启动 Elasticsearch：
+当你解压好了归档文件之后，Elasticsearch 已经准备好运行了。按照下面的操作，在前台(foregroud)启动 Elasticsearch：
 
 [source,sh]
 --------------------------------------------------
@@ -74,7 +74,7 @@ TIP：看到下方的 View in Sense 的例子了么？<<sense, Install the Sense
 Sense 是一个 https://www.elastic.co/guide/en/kibana/current/index.html[Kibana] 应用 ((("Sense console", "Kibana app")))
 它提供交互式的控制台，通过你的浏览器直接向 Elasticsearch 提交请求。
 这本书的在线版本包含有一个 View in Sense 的链接，里面有许多代码示例。当点击的时候，它会打开一个代码示例的Sense控制台。
-你不必要安装 Sense，但它通过让你在你本地的 Elasticsearch 集群上头测试示例代码，使这本书的对你而言，更具有交互性。
+你不必安装 Sense，但是它允许你在本地的 Elasticsearch 集群上测试示例代码，从而使本书更具有交互性。
 
 ((("Sense", "downloading and installing"))) 安装与运行 Sense：
 
